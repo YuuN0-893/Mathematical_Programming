@@ -1,0 +1,91 @@
+data;
+
+set Cities:= Amsterdam Berlin Paris Munich Madrid Barcelona Milan;
+set Origin := Amsterdam Madrid Barcelona Milan;
+set Demanders :=  Berlin Paris Munich;
+set Links:=
+(Amsterdam, Berlin)
+(Amsterdam, Paris)
+(Amsterdam, Munich)
+(Berlin, Amsterdam)
+(Berlin, Munich)
+(Paris, Amsterdam)
+(Paris, Munich)
+(Paris, Milan)
+(Paris, Barcelona)
+(Paris, Madrid)
+(Munich, Berlin)
+(Munich, Amsterdam)
+(Munich, Paris)
+(Munich, Milan)
+(Madrid, Paris)
+(Madrid, Barcelona)
+(Barcelona, Paris)
+(Barcelona, Madrid)
+(Barcelona, Milan)
+(Milan, Paris)
+(Milan, Barcelona)
+(Milan, Munich)
+;
+
+param Cost:=
+Amsterdam, Berlin 30
+Amsterdam, Paris 20
+Amsterdam, Munich 40
+Berlin, Amsterdam 30
+Berlin, Munich 30
+Paris, Amsterdam 20
+Paris, Munich 55
+Paris, Milan 30
+Paris, Barcelona 50
+Paris, Madrid 70
+Munich, Berlin 30
+Munich, Amsterdam 40
+Munich, Paris 55
+Munich, Milan 30
+Madrid, Paris 70
+Madrid, Barcelona 25
+Barcelona, Paris 50
+Barcelona, Madrid 25
+Barcelona, Milan 30
+Milan, Paris 30
+Milan, Barcelona 30
+Milan, Munich 50
+;
+
+param DemandSupply:=
+Amsterdam  -10
+Berlin 20
+Paris 20
+Munich 50
+Madrid -10
+Barcelona -20
+Milan -50
+;
+
+param Capacity:=
+Amsterdam, Berlin 20
+Amsterdam, Paris 20
+Amsterdam, Munich 20
+Berlin, Amsterdam 20
+Berlin, Munich 20
+Paris, Amsterdam 20
+Paris, Munich 20
+Paris, Milan 20
+Paris, Barcelona 20
+Paris, Madrid 20
+Munich, Berlin 20
+Munich, Amsterdam 20
+Munich, Paris 20
+Munich, Milan 60
+Madrid, Paris 20
+Madrid, Barcelona 20
+Barcelona, Paris 20
+Barcelona, Madrid 20
+Barcelona, Milan 20
+Milan, Paris 20
+Milan, Barcelona 20
+Milan, Munich 20
+;
+
+
